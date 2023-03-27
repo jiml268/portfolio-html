@@ -1,0 +1,26 @@
+
+
+.skills__list{
+display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+        justify-content: center;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.skills__header{
+    font-size: 50px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+
+}
