@@ -9,7 +9,7 @@
   </head>
   <header></header>
   <body>
-    <section class="intro">
+    <section class="intro wave">
       <h2>
         <span class="chande-color">Hello.</span>
         <span class="chande-color">I'm</span
@@ -22,64 +22,82 @@
         <span class="chande-color">Front-end</span>
         <span class="chande-color">Developher</span>
       </h2>
+      <div>
+        <ul class ="intro__list">
+          <li class = "intro__item"> <a class="intro__link" href="./docs/JAMES LYNCH WEB RESUME.pdf" download>
+            <img src="/images/icons8-cv-80.png" alt="Download Resume"> <p class="intro__link-text">Download <br>resume</p>
+          </a>
+        </li>
+        <li class = "intro__item"> <a class="intro__link" href="https://github.com/jiml268" target="_blank">
+          <svg width="80" height="80" fill="white">
+            <use href="./images/sprite.svg#icon-github"></use>
+          </svg> <p class="intro__link-text">GitHub</p>
+        </a>
+      </li>
+      <li class = "intro__item"> <a class="intro__link" href="http://www.linkedin.com/in/james-lynch-841a4a7b/" target="_blank">
+        <svg width="80" height="80" fill="white">
+          <use href="./images/sprite.svg#icon-linkedin"></use>
+        </svg><p class="intro__link-text">linkedin</p>
+      </a>
+    </li>
+        </ul>
+      </div>
     </section>
     <section class="about-me">
-      <p class="about-me-text">
-        I'm a developer with a skill for building relaionships. Having worked
-        closely with Property Manager's and Building tenants in the security
-        industry for the majority of my career. I bring a user-centered focus
-        and drive to each and every web project to create a memorable
-        experience. I'm a lifelong learner that's always looking go expand my
-        knowledge.
-      </p>
-    </section>
-
-    <section class="skills">
-      <h2 class="skills__header">Skills</h2>
-      <ul class="skills__list">
-        <li class="skills__item">
-          <h3>HTML</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-html5"></use>
-          </svg>
-        </li>
-        <li class="skills__item">
-          <h3>CSS</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-css3"></use>
-          </svg>
-        </li>
-        <li class="skills__item">
-          <h3>JavaScript</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-javascript"></use>
-          </svg>
-        </li>
-        <li class="skills__item">
-          <h3>Git</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-github"></use>
-          </svg>
-        </li>
-        <li class="skills__item">
-          <h3>GitHub</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-github1"></use>
-          </svg>
-        </li>
-        <li class="skills__item">
-          <h3>Sass</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-sass"></use>
-          </svg>
-        </li>
-        <li class="skills__item">
-          <h3>Bootstrape</h3>
-          <svg width="128" height="96">
-            <use href="./images/sprite.svg#icon-bootstrap"></use>
-          </svg>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="column">
+          <p class="about-me-text">
+            I'm a developer with a skill for building relaionships. Having worked
+            closely with Property Manager's and Building tenants in the security
+            industry for the majority of my career. I bring a user-centered focus
+            and drive to each and every web project to create a memorable
+            experience. I'm a lifelong learner that's always looking go expand my
+            knowledge.
+          </p>
+        </div>
+          <div class="column skills">
+            <h2 class="skills__header">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <h3>HTML</h3>
+                <svg width="80" height="45">
+                  <use href="./images/sprite.svg#icon-html5"></use>
+                </svg>
+              </li>
+              <li class="skills__item">
+                <h3>CSS</h3>
+                <svg width="80" height="45">
+                  <use href="./images/sprite.svg#icon-css3"></use>
+                </svg>
+              </li>
+              <li class="skills__item">
+                <h3>JavaScript</h3>
+                <svg width="80" height="45">
+                  <use href="./images/sprite.svg#icon-javascript"></use>
+                </svg>
+              </li>
+              <li class="skills__item">
+                <h3>Git</h3>
+                <svg width="80" height="45">
+                  <use href="./images/sprite.svg#icon-github"></use>
+                </svg>
+              </li>
+              
+              <li class="skills__item">
+                <h3>Sass</h3>
+                <svg width="80" height="45">
+                  <use href="./images/sprite.svg#icon-sass"></use>
+                </svg>
+              </li>
+              <li class="skills__item">
+                <h3>Bootstrape</h3>
+                <svg width="80" height="45">
+                  <use href="./images/sprite.svg#icon-bootstrap"></use>
+                </svg>
+              </li>
+            </ul>
+        </div>
+      </div>  
     </section>
     <script src="js/script.js" type="module"></script>
   </body>

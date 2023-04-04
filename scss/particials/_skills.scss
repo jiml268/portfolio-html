@@ -5,12 +5,23 @@ display: flex;
     flex-wrap: wrap;
     list-style-type: none;
         justify-content: center;
+        padding-left: 10px;
 }
 
 .skills__item {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 15px;
+    width: 90px
+    
+   
+}
+
+
+.skills__item:not(:last-child) {
+    margin-right: 15px;
+    
    
 }
 .skills__header{
@@ -22,5 +33,4 @@ display: flex;
 .skills{
     display: flex;
     flex-direction: column;
-
 }

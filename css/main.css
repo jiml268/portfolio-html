@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 p,
@@ -25,17 +26,46 @@ a {
   text-decoration: none;
 }
 
+section {
+  width: 100%;
+  min-height: 450px;
+}
+
+.wave {
+  position: relative;
+  background: linear-gradient(90deg, #f0027f, #f75489);
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url(../wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .skills__list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
+  padding-left: 10px;
 }
 
 .skills__item {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 15px;
+  width: 90px;
+}
+
+.skills__item:not(:last-child) {
+  margin-right: 15px;
 }
 
 .skills__header {
@@ -62,6 +92,42 @@ a {
 .intro {
   margin: 0 auto;
   text-align: center;
+}
+
+.intro__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.intro__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.intro__link-text, .intro__link, .intro__link:visited {
+  color: #aadfda;
+}
+
+.intro__link-text:hover, .intro__link:hover {
+  color: beige;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .about-me-text {
