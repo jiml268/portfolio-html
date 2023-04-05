@@ -19,8 +19,8 @@ function changecolor(e) {
             e.target.style.color = "black"
         }
     } else {
-        if (e.target.style.color !== "#735cad") {
-            e.target.style.color = "#735cad"
+        if (e.target.style.color !== "rgb(115, 92, 173)") {
+            e.target.style.color = "rgb(115, 92, 173)"
         } else {
             e.target.style.color = "blue"
         }

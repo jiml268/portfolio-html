@@ -1,0 +1,31 @@
+.portfolio__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.portfolio{
+    padding-top: 175px;
+   
+}
+
+.portfolio__item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+}
+.portfolio__item:not(:last-child){
+margin-right: 20px;
+}
+
+.portfolio-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio__item-header{
+    width: 175px;
+    text-align: center;
+}
