@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "poppins";
+  font-size: 16px;
 }
 
 p,
@@ -151,7 +153,7 @@ section {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -164,6 +166,8 @@ section {
   flex-direction: column;
   border: 1px solid black;
   padding: 10px;
+  width: 250px;
+  background-color: antiquewhite;
 }
 
 .portfolio__item:not(:last-child) {
@@ -178,4 +182,52 @@ section {
 .portfolio__item-header {
   width: 175px;
   text-align: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.portfolio__image {
+  margin: 0 auto;
+}
+
+.portfolio__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portfilio__link {
+  padding: 5px 7px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: rgb(187, 187, 231);
+}
+
+.portfilio__link-button {
+  border: none;
+  background-color: rgb(187, 187, 231);
+}
+
+.portfilio__link-button:hover {
+  border: none;
+  background-color: rgb(106, 106, 143);
+}
+
+.portfolio__desc {
+  padding: 15px;
+}
+
+.portfolio__skills {
+  display: flex;
+}
+
+.portfolio__skills-button {
+  margin: 10px auto;
+  padding: 5px 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: rgb(238, 245, 247);
+}
+
+.portfolio__skills-button:not(:last-child) {
+  margin-right: 5px;
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>James Lynch's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <header></header>
@@ -46,6 +50,7 @@
     <section class="about-me">
       <div class="row">
         <div class="column">
+          <h2 class="skills__header">About me</h2>
           <p class="about-me-text">
             I'm a developer with a skill for building relaionships. Having worked
             closely with Property Manager's and Building tenants in the security
@@ -101,49 +106,93 @@
     </section>
 
     <section class="portfolio wave-top">
-      <h2 class = 'portfolio-header'>
-       Portfolio
-      </h2>
+      <h2 class="skills__header">Portfolio</h2>
+
       <div>
         <ul class ="portfolio__list">
         <li class = "portfolio__item"> 
-          <h3 class ='portfolio__item-header'>Country statistic search</h3>
-          <img src="./images/country-lookup.png" alt="" width="175px" height="175px">
+          <h3 class ='portfolio__item-header'>Country information search</h3>
+          <img src="./images/country-lookup.png" alt="" width="175px" height="175px" class ="portfolio__image">
+          <div class ='portfolio__skills'>
+            <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-html5"></use>
+              </svg>HTML</button>
+              <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-sass"></use>
+              </svg>SCSS</button>
+              <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-javascript"></use>
+              </svg>JavaScript</button>
+          </div>
+<p class="portfolio__desc">An application to search for information about countries by their partial or full names.  This application uses the public API Rest Countries.  Application will display the country on a map</p>
           <div class = 'portfolio__buttons'>
-          <a class="intro__link" href="https://jiml268.github.io/county-search/" target="_blank">
-            <button>Live</button>
+          <a class="portfilio__link" href="https://jiml268.github.io/county-search/" target="_blank">
+            <button class = "portfilio__link-button">Live</button>
       
         </a>
-        <a class="intro__link" href="https://github.com/jiml268/county-search.git" target="_blank">
-          <button>source</button>
+        <a class="portfilio__link" href="https://github.com/jiml268/county-search.git" target="_blank">
+          <button class = "portfilio__link-button">source</button>
       </a>
           
     </div>
         </li>
         <li class = "portfolio__item"> 
           <h3 class ='portfolio__item-header'>Memory Matching Game</h3>
-          <img src="./images/match-game.png" alt="" width="175px" height="175px">
+          <img src="./images/match-game.png" alt="" width="175px" height="175px" class ="portfolio__image">
+          <div class ='portfolio__skills'>
+            <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-html5"></use>
+              </svg>HTML</button>
+              <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-sass"></use>
+              </svg>SCSS</button>
+              <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-javascript"></use>
+              </svg>JavaScript</button>
+          </div>
+          <p class="portfolio__desc">This is a single-player memory matching game where the player must match pairs of cards with the same value.  The game starts with you picking the number of cards and the style of the deck</p>
           <div class = 'portfolio__buttons'>
-          <a class="intro__link" href="https://jiml268.github.io/MemoryMatchGame/" target="_blank">
-            <button>Live</button>
+          <a class="portfilio__link" href="https://jiml268.github.io/MemoryMatchGame/" target="_blank">
+            <button class = "portfilio__link-button">Live</button>
       
         </a>
-        <a class="intro__link" href="https://github.com/jiml268/MemoryMatchGame.git" target="_blank">
-          <button>source</button>
+        <a class="portfilio__link" href="https://github.com/jiml268/MemoryMatchGame.git" target="_blank">
+          <button class = "portfilio__link-button">source</button>
       </a>
           
     </div>
         </li>
         <li class = "portfolio__item"> 
           <h3 class ='portfolio__item-header'>Image search gallery</h3>
-          <img src="./images/photo-gallery.png" alt="" width="175px" height="175px">
+          <img src="./images/photo-gallery.png" alt="" width="175px" height="175px" class ="portfolio__image">
+          <div class ='portfolio__skills'>
+            <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-html5"></use>
+              </svg>HTML</button>
+              <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-sass"></use>
+              </svg>SCSS</button>
+              <button disabled class ='portfolio__skills-button'>
+              <svg width="15" height="15">
+                <use href="./images/sprite.svg#icon-javascript"></use>
+              </svg>JavaScript</button>
+          </div>
+          <p class="portfolio__desc">A keyword search that retrieves images from the Pixabay API and displays them in a photo gallery.  The users can determine the number of images to retrieve per page and how additinal image get displayed </p>
           <div class = 'portfolio__buttons'>
-          <a class="intro__link" href="https://jiml268.github.io/photo-gallery/" target="_blank">
-            <button>Live</button>
+          <a class="portfilio__link" href="https://jiml268.github.io/photo-gallery/" target="_blank">
+            <button class = "portfilio__link-button">Live</button>
       
         </a>
-        <a class="intro__link" href="https://github.com/jiml268/photo-gallery.git" target="_blank">
-          <button>source</button>
+        <a class="portfilio__link" href="https://github.com/jiml268/photo-gallery.git" target="_blank">
+          <button class = "portfilio__link-button">source</button>
       </a>
           
     </div>
