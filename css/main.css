@@ -230,4 +230,10 @@ section {
 
 .portfolio__skills-button:not(:last-child) {
   margin-right: 5px;
+}
+
+.portfolio__type {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
