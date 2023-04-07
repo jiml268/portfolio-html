@@ -12,7 +12,7 @@ function changecolor(e) {
     if (e.target.nodeName !== "SPAN") {
         return
     }
-    if (e.target.className !== "chande-color-name") {
+    if (e.target.className !== "change-color-name") {
         if (e.target.style.color !== "gray") {
             e.target.style.color = "gray"
         } else {
