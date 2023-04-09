@@ -35,16 +35,16 @@ section {
 
 .wave, .wave-top {
   position: relative;
-  background: linear-gradient(90deg, #f0027f, #f75489);
+  background: linear-gradient(90deg, #f476f2, #3df0a5);
 }
 
-.wave::before {
+.wave:before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 100px;
   background: url(../wave.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,6 +62,27 @@ section {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 800px) {
+  .wave:before {
+    background: url(../wave-800.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 800px) {
+  .wave:before {
+    background: url(../wave-500.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1200px) {
+  .wave:before {
+    background: url(../wave-1200.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .skills__list {
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +126,7 @@ section {
 .intro {
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(90deg, #f0027f, #f75489);
+  background: linear-gradient(90deg, #f736f4, #f561f3, #f476f2, #3df0a5);
 }
 
 .intro__list {
@@ -166,7 +187,7 @@ section {
 
 .portfolio {
   padding-top: 175px;
-  background: linear-gradient(90deg, #f0027f, #f75489);
+  background: linear-gradient(90deg, #f736f4, #f561f3, #f476f2, #3df0a5);
 }
 
 .portfolio__item {
@@ -269,5 +290,5 @@ section {
 
 .contact-section {
   width: 100%;
-  background: linear-gradient(90deg, #f0027f, #f75489);
+  background: linear-gradient(90deg, #f736f4, #f561f3, #f476f2, #3df0a5);
 }/*# sourceMappingURL=main.css.map */
