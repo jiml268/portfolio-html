@@ -1,0 +1,12 @@
+.header__list{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 15px 10px 0;
+}
+.header__item a{
+    font-size: 12px;
+}
+
+.header__item:not(:last-child){
+margin-right: 10px;
+}

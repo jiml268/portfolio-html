@@ -83,6 +83,20 @@ section {
     background-repeat: no-repeat;
   }
 }
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 15px 10px 0;
+}
+
+.header__item a {
+  font-size: 12px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .skills__list {
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +125,10 @@ section {
 .skills {
   display: flex;
   flex-direction: column;
+}
+
+.skills__item h3 {
+  font-size: 12px;
 }
 
 .change-color-name {
@@ -281,6 +299,10 @@ section {
   .portfolio__item:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 10px;
+  }
+  .skills__item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 5px;
   }
 }
 .contact-us {
