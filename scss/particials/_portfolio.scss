@@ -15,9 +15,11 @@ background: linear-gradient(90deg, #f736f4, #f561f3, #f476f2, #3df0a5);
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+    border-radius: 14%;
     padding: 10px;
-    width: 250px;
-    background-color: antiquewhite;
+    width: 400px;
+    background-image: linear-gradient(to bottom, #c6ffdd, #fbd786, #f7797d);
+margin-bottom: 10px;
 
 }
 .portfolio__item:not(:last-child){
@@ -31,13 +33,15 @@ margin-right: 20px;
 }
 
 .portfolio__item-header{
-    width: 175px;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 15px;
 }
 
 .portfolio__image{
+    width: 75%;
+    height: 175px;
     margin: 0 auto;
 }
 
@@ -49,7 +53,7 @@ margin-right: 20px;
 .portfilio__link{
     padding: 5px 7px;
     border: 1px solid black;
-    border-radius: 50%;
+    border-radius: 28%;
     background-color: rgb(187, 187, 231);
 }
 
@@ -74,11 +78,20 @@ margin-right: 20px;
     margin: 10px auto;
     padding: 5px 8px;
     border: 1px solid black;
-    border-radius: 50%;
-    background-color: rgb(238, 245, 247);
+    border-radius: 31%;
+    //background-color: rgb(238, 245, 247);
     //font-size: 10px;
-    
+    }
+
+    .button__text{
+        padding-left: 5px;
+        color: rgb(98, 191, 237);
+    }
+
+.portfolio__skills-svg{
+    margin-right: 3px
 }
+
 .portfolio__skills-button:not(:last-child){
     margin-right: 5px;
 };
@@ -87,4 +100,10 @@ margin-right: 20px;
     display: flex;
     justify-content: center;
       font-size: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__item {
+        width: 90%;
+    }
 }

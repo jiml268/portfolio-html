@@ -1,14 +1,11 @@
 const infotext = document.querySelector('.intro');
-console.log.infotext
 infotext.addEventListener('mouseover', changecolor)
 
 
 
 
 function changecolor(e) {
-    console.log(e.target)
-    console.log(e.target.style)
-    console.log(e.target.className)
+  
     if (e.target.nodeName !== "SPAN") {
         return
     }
@@ -26,3 +23,5 @@ function changecolor(e) {
         }
     }
 }
+
+//new code for nav header
