@@ -3,7 +3,6 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const modelLink = document.querySelector('.mobile-menu');
-  modelLink.addEventListener("click", closeModel);
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -30,11 +29,3 @@
   });
 })();
 
-
-function closeModel(e) {
-  console.log(e.target.nodeName)
-  if (e.target.nodeName === "A") {
-
-    
-  }
-}
