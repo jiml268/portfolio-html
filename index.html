@@ -377,77 +377,52 @@
 
     <section class="contact-section" id="contact">
       <div class="contact-us">
-        <h1>Contact Form</h1>
+        <h1>Contact me</h1>
         <form
-          id="contact_form"
-          name="contact_form"
-          action="https://formsubmit.io/send/db58723f-6094-45d2-b24b-8fa5c4d21372"
           method="POST"
+          name="contactform"
+          action="contact-form-handler.php"
         >
-          <input name="_formsubmit_id" type="text" style="display: none" />
-          <div class="mb-5 row">
-            <div class="col">
-              <label>First Name</label>
-              <input
-                type="text"
-                required
-                maxlength="50"
-                class="form-control"
-                id="first_name"
-                name="name"
-              />
-            </div>
-            <div class="col">
-              <label>Last Name</label>
-              <input
-                type="text"
-                required
-                maxlength="50"
-                class="form-control"
-                id="last_name"
-                name="last_name"
-              />
-            </div>
-          </div>
-          <div class="mb-5 row">
-            <div class="col">
-              <label for="email_addr">Email address</label>
-              <input
-                type="email"
-                required
-                maxlength="50"
-                class="form-control"
-                id="email_addr"
-                name="email"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="col">
-              <label for="phone_input">Phone</label>
-              <input
-                type="tel"
-                required
-                maxlength="50"
-                class="form-control"
-                id="phone_input"
-                name="Phone"
-                placeholder="Phone"
-              />
-            </div>
-          </div>
-          <div class="mb-5">
-            <label for="message">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              name="message"
-              rows="5"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary px-4 btn-lg">
-            Send
-          </button>
+          <p>
+            <label for="name">Your Name:</label> <br />
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label for="name">Your Phone Number:</label> <br />
+            <input type="text" name="phone" />
+          </p>
+          <p>
+            <label for="email">Email Address:</label> <br />
+            <input type="text" name="email" /> <br />
+          </p>
+          <p>
+            <label for="message">Message:</label> <br />
+            <textarea name="message"></textarea>
+          </p>
+          <input type="submit" value="Submit" /><br />
         </form>
+        <script language="JavaScript">
+          // Code for validating the form
+          // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+          // for details
+          var frmvalidator = new Validator("contactform");
+          frmvalidator.addValidation("name", "req", "Please provide your name");
+          frmvalidator.addValidation(
+            "email",
+            "req",
+            "Please provide your email"
+          );
+          frmvalidator.addValidation(
+            "phone",
+            "req",
+            "Please provide your phone number"
+          );
+          frmvalidator.addValidation(
+            "email",
+            "email",
+            "Please enter a valid email address"
+          );
+        </script>
       </div>
     </section>
 
