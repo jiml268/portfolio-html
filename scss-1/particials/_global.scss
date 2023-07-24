@@ -37,15 +37,3 @@ a {
     .about_column {
         flex: 50%;
     }
-
-   @media (max-width: 500px) {
-        .about_row{
-            flex-direction: column;
-        }
-
-        .intro__list{width: 75%;}
-    }
-
-    .input-size{ width: 75%;
-
-    }

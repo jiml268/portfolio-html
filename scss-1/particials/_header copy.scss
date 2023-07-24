@@ -1,0 +1,23 @@
+.header__list{
+    display: flex;
+justify-content: center;
+    margin: 10px 15px 10px 0;
+}
+.header__link{
+    font-size: 25px;
+}
+
+.header__item:not(:last-child){
+margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .header__link {
+font-size: 20px;
+    }
+}
+
+.full-bar{
+    display: flex;
+    justify-content: center;
+}
